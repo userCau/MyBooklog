@@ -23,7 +23,7 @@ header {
 
 }
 
-.logotipo {
+.logotipo a {
     color: white;
     font-size: 35px;
     font-weight: bold;
@@ -53,4 +53,71 @@ button {
 
 button:hover {
     background-color: #30619c;
+}
+
+main {
+    padding: 30px;
+}
+
+.busca-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.busca-container h1 {
+    color: white;
+    font-size: 40px;
+}
+
+#form-busca {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#input-busca {
+    width: 400px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+#resultado-livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.card-livro {
+    background-color: #202022;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-livro:hover {
+    transform: scale(1.05);
+}
+
+.card-livro img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.info-livro {
+    padding: 15px;
+}
+
+.info-livro h2 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.info-livro p {
+    color: #bdbdbd;
+    font-size: 14px;
 }
