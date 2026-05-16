@@ -121,3 +121,122 @@ main {
     color: #bdbdbd;
     font-size: 14px;
 }
+
+main {
+    padding: 30px;
+}
+
+.busca-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.busca-container h1 {
+    color: white;
+    font-size: 40px;
+}
+
+#form-busca {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#input-busca {
+    width: 400px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+#resultado-livros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.card-livro {
+    background-color: #202022;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card-livro:hover {
+    transform: scale(1.05);
+}
+
+.card-livro img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.info-livro {
+    padding: 15px;
+}
+
+.info-livro h2 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.info-livro p {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.btn-favorito {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4771b0;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-favorito:hover {
+    background-color: #30619c;
+}
+
+.select-estante {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2d2f34;
+    color: white;
+}
+
+.titulo-pagina {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#lista-favoritos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.btn-remover {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b04444;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-remover:hover {
+    background-color: #912f2f;
+}
