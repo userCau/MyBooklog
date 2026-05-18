@@ -240,3 +240,34 @@ main {
 .btn-remover:hover {
     background-color: #912f2f;
 }
+
+.categoria-estante {
+    margin-bottom: 50px;
+    padding: 0 30px;
+}
+
+.categoria-estante h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.grid-estante {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.btn-remover-estante {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b04444;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-remover-estante:hover {
+    background-color: #912f2f;
+}

@@ -7,18 +7,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
-        <span class="logotipo"><a href="index.html">MyBooklog</a></span>
+
+        <span class="logotipo">
+            <a href="index.html">MyBooklog</a>
+        </span>
+
         <nav>
             <ul class="nav-links">
                 <li><a href="estante.html">Estante</a></li>
                 <li><a href="favoritos.html">Favoritos</a></li>
-                <li><a href="favoritos.html">Wishlist</a></li>
+                <li><a href="desejos.html">Wishlist</a></li>
                 <li><a href="busca.html">Buscar</a></li>
             </ul>
         </nav>
-        <a href="#"><button>Contato</button></a>
+
     </header>
-    <script src="js/script.js"></script>
+
+    <main>
+
+        <h1 class="titulo-pagina">
+            Minha Estante
+        </h1>
+
+        <section class="categoria-estante">
+
+            <h2>📖 Em leitura</h2>
+
+            <div id="lista-lendo" class="grid-estante"></div>
+
+        </section>
+
+        <section class="categoria-estante">
+
+            <h2>📚 Na fila de leitura</h2>
+
+            <div id="lista-fila" class="grid-estante"></div>
+
+        </section>
+
+        <section class="categoria-estante">
+
+            <h2>✅ Finalizados</h2>
+
+            <div id="lista-finalizados" class="grid-estante"></div>
+
+        </section>
+
+    </main>
+
+    <script src="js/estante.js"></script>
+
 </body>
 </html>
