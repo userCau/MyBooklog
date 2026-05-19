@@ -271,3 +271,25 @@ main {
 .btn-remover-estante:hover {
     background-color: #912f2f;
 }
+
+.btn-wishlist {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8a5bd1;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-wishlist:hover {
+    background-color: #7347b4;
+}
+
+#lista-wishlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}

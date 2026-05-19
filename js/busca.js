@@ -50,8 +50,13 @@ function buscarLivros(nomeLivro) {
                         </p>
 
                         <button class="btn-favorito">
-                            ❤️ Favoritar
+                            Favoritar
                         </button>
+
+                        <button class="btn-wishlist">
+                            Lista de desejos
+                        </button>
+
 
                         <select class="select-estante">
 
@@ -80,6 +85,9 @@ function buscarLivros(nomeLivro) {
                 const btnFavorito =
                     card.querySelector('.btn-favorito');
 
+                const btnWishlist =
+                    card.querySelector('.btn-wishlist');
+
                 const selectEstante =
                     card.querySelector('.select-estante');
 
@@ -105,6 +113,31 @@ function buscarLivros(nomeLivro) {
                     );
 
                     alert('Livro favoritado');
+
+                });
+
+                btnWishlist.addEventListener('click', function() {
+
+                    const wishlist =
+                        JSON.parse(
+                            localStorage.getItem('wishlist')
+                        ) || [];
+
+                    wishlist.push({
+                        id: livro.key,
+                        titulo: livro.title,
+                        autor: livro.author_name
+                            ? livro.author_name[0]
+                            : 'Autor desconhecido',
+                        capa: capa
+                    });
+
+                    localStorage.setItem(
+                        'wishlist',
+                        JSON.stringify(wishlist)
+                    );
+
+                    alert('Livro adicionado à wishlist');
 
                 });
 
