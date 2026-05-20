@@ -17,11 +17,97 @@
                 <li><a href="busca.html">Buscar</a></li>
             </ul>
         </nav>
-        <a href="#"><button>Contato</button></a>
+        
     </header>
+
     <main>
-        <div id="livros"></div>
+
+        <section class="hero">
+
+            <h1>
+                Organize sua jornada de leitura
+            </h1>
+
+            <p>
+                Busque livros, favorite obras
+                e acompanhe suas leituras.
+            </p>
+
+            <a href="busca.html">
+                <button>
+                    Buscar livros
+                </button>
+            </a>
+
+        </section>
+
+        <section class="dashboard">
+
+            <div class="card-dashboard">
+
+                <h2>Favoritos</h2>
+
+                <p id="total-favoritos">
+                    0
+                </p>
+
+            </div>
+
+            <div class="card-dashboard">
+
+                <h2>Wishlist</h2>
+
+                <p id="total-wishlist">
+                    0
+                </p>
+
+            </div>
+
+            <div class="card-dashboard">
+
+                <h2>Em leitura</h2>
+
+                <p id="total-lendo">
+                    0
+                </p>
+
+            </div>
+
+            <div class="card-dashboard">
+
+                <h2>Finalizados</h2>
+
+                <p id="total-finalizados">
+                    0
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="continuar-leitura">
+
+            <h2>
+                Continue lendo
+            </h2>
+
+            <div id="livro-atual"></div>
+
+        </section>
+
+        <section class="ultimos-adicionados">
+
+            <h2>
+                Últimos adicionados
+            </h2>
+
+            <div id="ultimos-livros"></div>
+
+        </section>
+
     </main>
-    <script src="js/script.js"></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>

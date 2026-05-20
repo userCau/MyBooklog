@@ -293,3 +293,91 @@ main {
     gap: 25px;
     padding: 30px;
 }
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #bdbdbd;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.card-dashboard {
+    background-color: #202022;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-dashboard h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card-dashboard p {
+    color: #6090d7;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.continuar-leitura,
+.ultimos-adicionados {
+    padding: 30px;
+}
+
+.continuar-leitura h2,
+.ultimos-adicionados h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#livro-atual,
+#ultimos-livros {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-home {
+    width: 200px;
+    background-color: #202022;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-home img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-home-info {
+    padding: 15px;
+}
+
+.card-home-info h3 {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-home-info p {
+    color: #bdbdbd;
+    font-size: 14px;
+}
