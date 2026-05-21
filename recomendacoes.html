@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recomendações</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <header>
+
+        <span class="logotipo">
+            <a href="index.html">MyBooklog</a>
+        </span>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="estante.html">Estante</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><a href="desejos.html">Wishlist</a></li>
+                <li><a href="recomendacoes.html">Recomendações</a></li>
+                <li><a href="busca.html">Buscar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="pagina-recomendacoes">
+
+            <h1>
+                Recomendações
+            </h1>
+
+            <button id="btn-aleatorio">
+                Me recomende um livro
+            </button>
+
+            <div id="livro-aleatorio"></div>
+
+        </section>
+
+        <section class="categoria-recomendacao">
+
+            <h2>Fantasia</h2>
+
+            <div id="fantasia" class="linha-livros"></div>
+
+        </section>
+
+        <section class="categoria-recomendacao">
+
+            <h2>Terror</h2>
+
+            <div id="terror" class="linha-livros"></div>
+
+        </section>
+
+        <section class="categoria-recomendacao">
+
+            <h2>Romance</h2>
+
+            <div id="romance" class="linha-livros"></div>
+
+        </section>
+
+        <section class="categoria-recomendacao">
+
+            <h2>Ficção científica</h2>
+
+            <div id="ficcao" class="linha-livros"></div>
+
+        </section>
+
+    </main>
+
+    <script src="js/recomendacoes.js"></script>
+
 </body>
 </html>
