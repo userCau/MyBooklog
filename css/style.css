@@ -452,3 +452,39 @@ main {
     color: #bdbdbd;
     font-size: 13px;
 }
+
+body.tema-claro {
+    background-color: #f5f5f5;
+}
+
+body.tema-claro header {
+    background-color: white;
+}
+
+body.tema-claro .card-livro,
+body.tema-claro .card-dashboard,
+body.tema-claro .card-home,
+body.tema-claro .card-recomendacao {
+    background-color: white;
+}
+
+body.tema-claro h1,
+body.tema-claro h2,
+body.tema-claro h3,
+body.tema-claro a,
+body.tema-claro p {
+    color: #222;
+}
+
+body.tema-claro .info-livro p,
+body.tema-claro .card-home-info p,
+body.tema-claro .card-recomendacao-info p {
+    color: #555;
+}
+
+body.tema-claro #input-busca,
+body.tema-claro .select-estante {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
